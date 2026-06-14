@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --header-h: 76px;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-padding-top: var(--header-h);
+}
+
+body {
+  background-color: #faf8f3;
+  color: #16243a;
+}
+
+::selection {
+  background-color: #ff5a1f;
+  color: #ffffff;
+}
+
+:focus-visible {
+  outline: 2px solid #ff5a1f;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ---------------------------------------------------------
+   Signature motif: "The Lunge Mark"
+   A rotated cross/diamond echoing the X figure in the logo —
+   used as a small accent behind icons, numerals and badges.
+--------------------------------------------------------- */
+.lunge-mark {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.lunge-mark::before {
+  content: "";
+  position: absolute;
+  inset: 6%;
+  border-radius: 10px;
+  transform: rotate(45deg);
+  z-index: 0;
+}
+.lunge-mark.is-teal::before {
+  background: #14919b;
+}
+.lunge-mark.is-orange::before {
+  background: #ff5a1f;
+}
+.lunge-mark.is-navy::before {
+  background: #0f2c4a;
+}
+.lunge-mark > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ---------------------------------------------------------
+   Diagonal section seams — angled transition lines that
+   recur as a kinetic rhythm between sections.
+--------------------------------------------------------- */
+.seam-down {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 28px));
+}
+.seam-up {
+  clip-path: polygon(0 28px, 100% 0, 100% 100%, 0 100%);
+}
+@media (min-width: 768px) {
+  .seam-down {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 56px));
+  }
+  .seam-up {
+    clip-path: polygon(0 56px, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+/* Dot-grid texture used in the hero backdrop */
+.dot-grid {
+  background-image: radial-gradient(currentColor 1.4px, transparent 1.4px);
+  background-size: 22px 22px;
+}
+
+/* Hide scrollbar for the logo/marquee strip while remaining scrollable */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
