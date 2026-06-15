@@ -13,7 +13,7 @@ const NAV_LINKS = [
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
   { label: "Our Standards", href: "/standards" },
-  { label: "Blog", href: "/careers" },
+  { label: "Blog", href: "/blog" },
   { label: "Trainers", href: "/trainers" },
   { label: "Contact", href: "/contact" },
 ];
