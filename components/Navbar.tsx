@@ -13,7 +13,7 @@ const NAV_LINKS = [
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
   { label: "Our Standards", href: "/standards" },
-  { label: "For Trainers (Careers)", href: "/careers" },
+  { label: "Blog", href: "/careers" },
   { label: "Trainers", href: "/trainers" },
   { label: "Contact", href: "/contact" },
 ];
@@ -48,7 +48,7 @@ export default function Navbar() {
           ? "bg-cream/95 backdrop-blur-md shadow-[0_2px_18px_-6px_rgba(15,44,74,0.25)]"
           : "bg-cream/80 backdrop-blur-sm"
           }`}
-        style={{ height: "var(--header-h)" }}
+        style={{ height: "var(--header-h)", backgroundColor: "#ffffff !important" }}
       >
         <div className="mx-auto flex h-full max-w-7.5xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-20">
           {/* Logo */}

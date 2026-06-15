@@ -160,7 +160,7 @@ export default function Hero() {
       id="home"
       className="relative overflow-hidden bg-cream pb-28 pt-0 sm:pb-6 sm:pt-0"
     >
-           {/* <div className="relative mt-6 w-full animate-fade-up [animation-delay:100ms]">
+      {/* <div className="relative mt-6 w-full animate-fade-up [animation-delay:100ms]">
         <div className="relative h-[480px] w-full overflow-hidden shadow-2xl shadow-navy/25 sm:h-[420px] lg:h-[480px]">
           <HeroSlider />
         </div>
@@ -176,16 +176,16 @@ export default function Hero() {
       /> */}
 
       {/* Full Width Hero Slider */}
- 
+
 
       {/* Content Container */}
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 lg:pt-20 lg:pb-12">
         {/* Overlapping Content Card */}
         <div className="relative z-10 mx-auto -mt-16 max-w-4xl animate-fade-up rounded-[1.75rem] bg-white px-6 py-8 text-center shadow-2xl shadow-navy/15 sm:-mt-20 sm:rounded-[2.25rem] sm:px-12 sm:py-10 lg:-mt-24 lg:px-16 lg:py-12 [animation-delay:200ms]">
           <h1 className="font-display text-3xl font-extrabold leading-[1.12] tracking-tight text-navy sm:text-4xl lg:text-[2rem]">
-            Delhi NCR&rsquo;s Premium{" "}
-            <span className="relative inline-block">Doorstep Fitness</span>{" "}
-            Network
+            Flexible fitness&rsquo;, delivered to{" "}
+            <span className="relative inline-block">Network</span>{" "}
+            doorstep
           </h1>
 
           <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-navy/70 sm:text-lg">
